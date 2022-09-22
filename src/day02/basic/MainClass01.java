@@ -1,15 +1,15 @@
-package day01.basic;
+package day02.basic;
 
 /*
  * [[ 연산자 ]]
  * 1. 산술연산자
  *  + ,  -  ,  *  ,  /  ,  %
- * 더하기 뺴기  곱하기  나누기  
+ * 더하기 뺴기  곱하기  나누기  소수점나누기
  * 
  * 
  * 
  */
-public class MainClass08 {
+public class MainClass01 {
 public static void main(String[] args) {
 	int num1 = 10;
 	int num2 = 10;
