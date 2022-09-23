@@ -1,11 +1,11 @@
-package day02_basic;
-
+package day02.basic;
 
 /*
- * for 문 사용하기 
+ * for 문 사용하기
  * 
  */
-public class Mainclass14 {
+
+public class MainClass14 {
 	public static void main(String[] args) {
 		
 		for(int i=0; i < 10; i++) {
@@ -13,8 +13,8 @@ public class Mainclass14 {
 			for(int j=0; j < 10; j++) {
 				System.out.print(j+" ");
 			}
-			System.out.println(); //개행하기
-			
+			System.out.println(); // 개행하기
 		}
 	}
+
 }

@@ -1,4 +1,4 @@
-package day02_basic;
+package day02.basic;
 /*
  * do ~ while() 문
  * 
@@ -8,14 +8,27 @@ package day02_basic;
  * 
  */
 
-public class Mainclass13 {
+public class MainClass13 {
 	public static void main(String[] args) {
 		int count = 0;
 		do {	// 최소 한번은 실행된다.
-			System.out.print(count+" ");
+			System.out.print(count+ " ");
 			count++;
 		}while(count<100);
-				
 	}
-		
+	
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
