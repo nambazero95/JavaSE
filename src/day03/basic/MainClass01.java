@@ -15,5 +15,4 @@ public class MainClass01 {
 		}
 		System.out.println("");
 	}
-		
-}
+}		
