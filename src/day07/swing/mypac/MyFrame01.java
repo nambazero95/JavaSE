@@ -45,7 +45,7 @@ public class MyFrame01 extends JFrame implements AstionListener{
 		btn5.addActionListener(this);
 	
 		// 프레임의 최상단의 좌표와 크기를 결정한다.
-		setBounds(100, 100, 500, 500)
+		setBounds(100, 100, 500, 500);
 		// 화면에 보이도록 설정한다.
 		setVisible(true);
 		
