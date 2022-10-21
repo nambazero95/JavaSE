@@ -326,7 +326,7 @@ from emp
 where deptno in(10,20)
 ```
 
-**<2> BETWEEN A AND B (A와 B 사이의 데이터를 얻어온다)	**
+**<2> BETWEEN A AND B (A와 B 사이의 데이터를 얻어온다)**   
 - 급여가 1000과 2000 사이인 사원들의 사원번호, 이름, 급여를 출력하세요
 ```
 select empno,ename,sal
@@ -992,9 +992,6 @@ select empno,ename,job,hiredate
 from emp
 where empno in (select distinct(mgr)from emp);
 
-select e1.empno,e1.ename,e1.job,e1.hiredate
-from emp e1,emp e2
-where e1.empno = e2.mgr;
 ```
 
 **[2] DML (Data Manipulation Language)**
@@ -1026,13 +1023,16 @@ where e1.empno = e2.mgr;
  
 - 연습용 테이블 만들기
 ```
-create table member
-	(
-        num  int,
-        name varchar(30),
-        addr varchar(50),
-        PRIMARY KEY (`num`)
-	);
+
+CREATE TABLE `member` (
+	`no` INT(11) NOT NULL,
+	`name` VARCHAR(10) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`address` VARCHAR(100) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	PRIMARY KEY (`no`) USING BTREE
+)
+COLLATE='utf8_general_ci'
+ENGINE=InnoDB
+;
 (primary : null,중복 허용하지 않음. ID 값을 입력할 수 있는 키)
 
 insert into member values(1,'김구리','노량진');
